@@ -74,11 +74,11 @@ public class Dealership {
         return null; //remove this
     }
 
-    public void addVehicle() {
+    public void addVehicle(Vehicle vehicle) {
 
     }
 
-    public void removeVehicle() {
+    public void removeVehicle(Vehicle vehicle) {
 
     }
 
