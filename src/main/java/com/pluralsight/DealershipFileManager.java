@@ -11,6 +11,8 @@ public class DealershipFileManager {
 
         try {
             BufferedReader buff = new BufferedReader(new FileReader("dealership.csv"));
+            Dealership dealership = new Dealership("", "", ""); //need to find these, this is temporary
+
             String line;
             while ((line = buff.readLine()) != null) {
                 String[] parts = line.split("\\|");
@@ -23,18 +25,21 @@ public class DealershipFileManager {
                     String color = parts[5].trim();
                     int mileage = Integer.parseInt(parts[6]);
                     double price = Double.parseDouble(parts[7]);
+                    Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, mileage, price);
+                    dealership.addVehicle(vehicle);
                 }
             }
             buff.close();
+            return dealership;
         } catch (Exception e) {
             System.out.println("Error loading inventory: " + e.getMessage());
         }
-
         return null;
     }
 
     public static void saveDealership(Dealership dealership) {
-        
+
+
 
 
     }
