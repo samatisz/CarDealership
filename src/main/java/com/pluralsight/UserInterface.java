@@ -2,7 +2,11 @@ package com.pluralsight;
 
 public class UserInterface {
 
-    //dealership : Dealership
+   Dealership dealership = new Dealership("", "", "");
+
+
+
+
     //UserInerface()
     //display()
     //processGetByPriceRequest()
