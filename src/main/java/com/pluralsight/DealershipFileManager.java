@@ -7,7 +7,7 @@ import java.time.LocalTime;
 
 public class DealershipFileManager {
 
-    public static Dealership getDealership() {
+    public Dealership getDealership() {
 
         try {
             BufferedReader buff = new BufferedReader(new FileReader("dealership.csv"));

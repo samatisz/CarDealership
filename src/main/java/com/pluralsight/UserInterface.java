@@ -1,22 +1,63 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class UserInterface {
 
-   Dealership dealership = new Dealership("", "", "");
+   private Scanner myScanner;
+   private Dealership dealership;
+
+   public UserInterface() {
+      myScanner = new Scanner(System.in);
+
+   }
+
+   private void init() {
+       DealershipFileManager fileManager = new DealershipFileManager();
+       this. dealership = fileManager.getDealership();
+
+   }
+
+   public void display() {
+       //display is hardest, do last,,, or at least after others
 
 
+   }
 
+   public void processGetByPriceRequest() {
 
-    //UserInerface()
-    //display()
-    //processGetByPriceRequest()
-    //ProcessGetByMakeModelRequest()
-    //ProcessGetByYearRequest()
-    //ProcessGetByColorRequest()
-    //ProcessGetByMileageRequest()
-    //ProcessGetByTypeRequest()
-    //processGetAllVehicleTypeRequest()
-    //processAddVehicleRequest()
-    //processRemoveVehicleRequest()
+   }
+
+   public void processGetByMakeModelRequest() {
+
+   }
+
+   public void processGetByYearRequest() {
+
+   }
+
+   public void processGetByColorRequest() {
+
+   }
+
+   public void processGetByMileageRequest() {
+
+   }
+
+    public void processGetByTypeRequest() {
+
+    }
+
+    public void processGetAllVehicleTypeRequest() {
+
+    }
+
+    public void processAddVehicleRequest() {
+
+    }
+
+    public void processRemoveVehicleRequest() {
+
+    }
 
 }
