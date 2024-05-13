@@ -11,7 +11,7 @@ public class DealershipFileManager {
 
         try {
             BufferedReader buff = new BufferedReader(new FileReader("dealership.csv"));
-            Dealership dealership = new Dealership("SaMatz Cars", "127 Halazia Drive", "123-456-7890");
+            Dealership dealership = new Dealership("SaMatz Cars", "127 Halazia Street", "123-456-7890");
 
             String line;
             while ((line = buff.readLine()) != null) {

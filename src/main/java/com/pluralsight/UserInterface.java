@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInterface {
@@ -23,6 +24,13 @@ public class UserInterface {
 
 
    }
+
+   private void displayVehicles() {
+       //for each will be used
+
+   }
+
+
 
    public void processGetByPriceRequest() {
 
