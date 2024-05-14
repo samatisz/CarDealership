@@ -2,20 +2,27 @@ package com.pluralsight;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.time.LocalDate;
-import java.time.LocalTime;
+
 
 public class DealershipFileManager {
+    public Dealership dealership;
 
     public Dealership getDealership() {
 
         try {
             BufferedReader buff = new BufferedReader(new FileReader("dealership.csv"));
-            Dealership dealership = new Dealership("SaMatz Cars", "127 Halazia Street", "123-456-7890");
+
 
             String line;
             while ((line = buff.readLine()) != null) {
                 String[] parts = line.split("\\|");
+                if (parts.length == 3) {
+                    String name = parts[0].trim();
+                    String address = parts[1].trim();
+                    String phoneNumber = parts[2].trim();
+                    dealership = new Dealership(name, address, phoneNumber);
+                }
+
                 if (parts.length == 8) {
                     int vin = Integer.parseInt(parts[0]);
                     int year = Integer.parseInt(parts[1]);

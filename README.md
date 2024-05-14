@@ -2,7 +2,7 @@
 
 ## Description of the Project
 
-An application for an online store that sells random items. The user is able to check out with their purchases without trouble. 
+An application for a carDealership named SaMatz Used Wheels
 
 ![Class Diagram](path/to/your/class_diagram.png)
 
