@@ -78,7 +78,7 @@ public class UserInterface {
            System.out.println(vehicle);
        }
        //for each will be used
-       
+
    }
 
 
