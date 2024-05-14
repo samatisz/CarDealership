@@ -26,7 +26,7 @@ public class DealershipFileManager {
                     int mileage = Integer.parseInt(parts[6]);
                     double price = Double.parseDouble(parts[7]);
                     Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, mileage, price);
-                    dealership.addVehicle(vehicle);
+                    dealership.addVehicle(vehicle); //the array list???/
                 }
             }
             buff.close();
