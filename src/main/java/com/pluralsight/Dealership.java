@@ -47,31 +47,31 @@ public class Dealership {
     public List<Vehicle> getVehiclesByPrice(double min, double max) {
         //need to show and compare prices in the array list
 
-        return null; //remove once starting
+        return null;
 
     }
     public List<Vehicle> getVehiclesbyMakeModel(String make, String model) {
-        return null; //remove this
+        return null;
     }
 
     public List<Vehicle> getVehiclesbyYear(int min, int max) {
-        return null; //remove later
+        return null;
     }
 
     public List<Vehicle> getVehiclesByColor(String color) {
-        return null; //remove this
+        return null;
     }
 
     public List<Vehicle> getVehiclesByMileage(int min, int max) {
-        return null; //remove this
+        return null;
     }
 
     public List<Vehicle> getVehiclesByType(String type){
-        return null; //remove this
+        return null;
     }
 
     public List<Vehicle> getAllVehicles() {
-        return null; //remove this
+        return null;
     }
 
     public void addVehicle(Vehicle vehicle) {

@@ -14,7 +14,7 @@ public class UserInterface {
 
    }
 
-   private void init() { //init means initialize
+   public void init() { //init means initialize
        DealershipFileManager fileManager = new DealershipFileManager();
        this.dealership = fileManager.getDealership();
 
