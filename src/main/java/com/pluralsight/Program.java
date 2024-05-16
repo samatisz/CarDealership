@@ -5,6 +5,6 @@ public class Program {
         UserInterface userPage = new UserInterface();
         userPage.init();
         userPage.display();
-        
+
     }
 }

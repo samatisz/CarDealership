@@ -41,11 +41,11 @@ public class Dealership {
         this.phone = phone;
     }
     //how do you make array list in this class using the vehicle stuff????
-    //addVehicle method
-    //removeVehicle method
+
 
     public List<Vehicle> getVehiclesByPrice(double min, double max) {
         //need to show and compare prices in the array list
+        //for each
 
         return null;
 
