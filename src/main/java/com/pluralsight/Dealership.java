@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-import java.time.format.DateTimeFormatter;
+import java.beans.beancontext.BeanContextChild;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,15 +40,16 @@ public class Dealership {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-    //how do you make array list in this class using the vehicle stuff????
-
 
     public List<Vehicle> getVehiclesByPrice(double min, double max) {
-        //need to show and compare prices in the array list
-        //for each
+        List<Vehicle> vehicles = new ArrayList<Vehicle>();
 
-        return null;
-
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getPrice() >= min && vehicle.getPrice() <= max){
+                inventory.add(vehicle);
+            }
+        }
+        return vehicles;
     }
     public List<Vehicle> getVehiclesbyMakeModel(String make, String model) {
         return null;
@@ -75,10 +76,11 @@ public class Dealership {
     }
 
     public void addVehicle(Vehicle vehicle) {
+        inventory.add(vehicle);
 
     }
 
-    public void removeVehicle(Vehicle vehicle) {
+    public void removeVehicle() {
 
     }
 
